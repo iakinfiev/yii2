@@ -146,6 +146,17 @@ class SiteController extends Controller
     }
 
     /**
+     *  домашка первого урока
+     * @return string
+     */
+    public function actionHello()
+    {
+        $text = 'Hello, world';
+        return $this->render('hello', [
+        'view' => $text,
+        ]);
+    }
+    /**
      * Signs user up.
      *
      * @return mixed
